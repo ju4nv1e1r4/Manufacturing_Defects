@@ -15,6 +15,8 @@ O principal objetivo deste projeto é prever defeitos em máquinas para reduzir 
 7. Avaliação do algoritmo
 8. Modelo pronto para implementação
 
+![alt text](CRISP-DM.png)
+
 ### Acompanhamento
 
 Farei o acompanhamento deste projeto etapa por etapa, sem pular, para desenvolver o máximo de cada. Vou ficar sempre documentando, por isso, já ativa as notificações ai para me acompanhar. Ah, se quiser pode colaborar também, por isso fique a vontade para falar comigo no meu [LinkedIn](https://www.linkedin.com/in/juanvieira85/). 
