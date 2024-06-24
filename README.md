@@ -1,6 +1,6 @@
 ## Manufacturing Defects
 
-
+![alt text](pikaso_texttoimage_cyberpunk-guy-programming-python-junior-data-scien.jpeg)
 
 O principal objetivo deste projeto é prever defeitos em máquinas para reduzir o downtime, melhorar a eficiência operacional e diminuir os custos de manutenção e produção. Neste projeto irei seguir o pipeline abaixo e tomar ações baseadas na metodologia CRISP-DM. A idéia central é aprender, portantto, irei executar o ciclo completo de um projeto tradicional de ciência de dados.
 
