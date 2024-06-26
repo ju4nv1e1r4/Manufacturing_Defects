@@ -1,8 +1,8 @@
 # %%
 # importando bibliotecas e etc
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, MetaData, Table, select
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import MetaData, Table, select
+import pandas as pd
 from config import DBconfig
 
 # %%
@@ -24,7 +24,7 @@ except Exception as Error:
     print('Algo deu errado com sua conexão.', Error)
 
 # %%
-# evento de teste com query
+# evento de teste com query e salvando arquivo em csv
 try:
     metadata = MetaData()
     tb = 'manufacturing_defects'
@@ -34,14 +34,19 @@ try:
     stmt = select(table_name)
     res = session.execute(stmt)
 
-    for i in res:
-        print(i)
+    
+    df = pd.DataFrame(res.fetchall(), columns=res.keys())
 
+    
+    csv = 'manufacturing_defects_data.csv'
+    df.to_csv(csv, index=False)
+    
     session.close()
-    print('Query executada com sucesso.')
+    print(f'Query executada com sucesso. Dados salvos em {csv}')
 
 except Exception as QueryError:
     print('Query não pode ser executada. Seguem os detalhes do erro:', QueryError)
 
 
+# %%
 session.close()
