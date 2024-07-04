@@ -39,7 +39,7 @@ if prediction == 1:
 else:
     print('A máquina provavelmente não dará defeitos')
 '''
-este pequeno teste, foi feito uma redução de mais de 
+neste pequeno teste, foi feita uma redução de mais de 
 50% de horas de manutenção semanais,  e o algoritmo
 identificou que, com base nas entradas do 'exemplo1'
 a máquina tem mais probabilidades de não dar defeitos
